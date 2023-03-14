@@ -10,7 +10,7 @@ public class TestJoin implements Runnable {
         Thread t = new Thread(new TestJoin());
         long start = System.currentTimeMillis();
         t.start();
-        //oin()方法的作用是阻塞当前线程，直到调用join()的线程结束销毁，
+        //join()方法的作用是阻塞当前线程，直到调用join()的线程结束销毁，
         // 或者指定阻塞时长，若线程没停止但是超时，取消阻塞
         t.join(3000);
         System.out.println(System.currentTimeMillis() - start);
